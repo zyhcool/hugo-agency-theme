@@ -59,6 +59,12 @@
           </li>
         {{ end }}
 
+        {{ if .Site.Params.clients_list.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#clients">{{ with .Site.Params.navigation.clients }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
         {{ if .Site.Params.contact.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>

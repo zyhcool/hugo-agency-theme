@@ -1,0 +1,105 @@
+/* hero */
+.intro-heading{
+    letter-spacing: 20px;
+}
+
+/* services */
+.service-img{
+    width:100%;
+    height: 100%;
+    border-radius: 200px;
+}
+.service-img-wrapper{
+    margin-bottom: 1em;
+}
+
+a>.service-highlight:hover{
+    text-decoration: none;
+}
+
+.service-highlight:hover{
+    box-shadow: 6px 6px 36px #fed136;
+}
+/* about */
+.timeline>li{
+    margin-bottom: 50px;
+}
+
+.culture-title{
+    font-size: 1.5em;
+}
+
+/* client */
+aside h3.section-subheading{
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+aside h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+aside.clients{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.clients-title{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fed136;
+}
+
+/* contact */
+.method-box{
+    min-width: 100px;
+    min-height: 100px;
+    background-color: aliceblue;
+    /* opacity: 0.6; */
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.method-icon{
+    min-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 36px;
+    color: #fed136;
+}
+
+.method-content{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+section#contact{
+    background-color: white;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section#contact .section-heading {
+    color: inherit;
+}
+
+
+/* common */
+.section-subtitle{
+    word-spacing: 4px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
