@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+{{ partial "head.html" . }}
+
+<body id="page-top" class="index">
+    <!-- navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                {{ if .Site.Params.navigation.logo }}
+                <a class="navbar-brand page-scroll" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+                    {{ $url := printf "img/%s" .Site.Params.navigation.logo }}
+                    <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .Site.Params.navigation.brand }}">
+                </a>
+                {{ else }}
+                <a class="navbar-brand page-scroll" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+                    {{ .Site.Params.navigation.brand }}
+                </a>
+                {{ end }}
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <!-- <a class="page-scroll" href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.navigation.services }}{{ . }}{{ end }}</a> -->
+                        <a class="page-scroll" href="http://localhost:1313/teaching/#motivation">平台目标</a>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a> -->
+                        <a class="page-scroll" href="http://localhost:1313/teaching/#special">平台特色</a>
+                    </li>
+                    <li>
+                        <!-- <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a> -->
+                        <a class="page-scroll" href="http://localhost:1313/teaching/#courses">平台课程</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- objective -->
+    <section id="objective">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">平台目标</h2>
+                    <h3 class="section-subheading text-muted section-subtitle">OBJECTIVE</h3>
+                </div>
+            </div>
+            <div class="row flexbox flex-space-around">
+                <div class="obj-wrapper">
+                    <p class="obj">
+                        为考生提供<br><span class="obj-strong">在线</span><br>“讲+练+考”全方位辅导
+                    </p>
+                </div>
+                <div class="obj-wrapper">
+                    <p class="obj">
+                        为考生解决<br><span class="obj-strong">个性化</span><br>问题，迅速提升成绩
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- series -->
+    <section id="series">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">平台系列</h2>
+                    <h3 class="section-subheading text-muted section-subtitle">SERIES</h3>
+                </div>
+            </div>
+            <div class="row flexbox flex-space-around">
+                <div class="certificate">
+                    <p class="target">youeryuan</p>
+                    <img src="http://localhost:1313/img/header-bg.jpg" alt="">
+                    <p class="cert-name">教师资格证考试</p>
+                </div>
+                <div class="certificate">
+                    <p class="target">youeryuan</p>
+                    <img src="http://localhost:1313/img/header-bg.jpg" alt="">
+                    <p class="cert-name">教师资格证考试</p>
+                </div>
+                <div class="certificate">
+                    <p class="target">youeryuan</p>
+                    <img src="http://localhost:1313/img/header-bg.jpg" alt="">
+                    <p class="cert-name">教师资格证考试</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- resources -->
+    <section id="resources">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">平台资源</h2>
+                    <h3 class="section-subheading text-muted section-subtitle">RESOURCES</h3>
+                </div>
+            </div>
+            <div class="row flexbox flex-space-around">
+                <div class="res-wrapper">
+                    <div>
+                        <div class="square-rotate"></div>
+                        <p class="no-rotate">每日一练</p>
+                    </div>
+                    <p class="desc">iwe jfsdk jfise jkds jks dj fkjs dkfsd fsdf</p>
+                </div>
+                <div class="res-wrapper">
+                    <p class="desc">iwe jfsdk jfise jkds jks dj fkjs dkfsd fsdf</p>
+                    <div>
+                        <div class="square-rotate"></div>
+                        <p class="no-rotate">每日一练</p>
+                    </div>
+                </div>
+                <div class="res-wrapper">
+                    <div>
+                        <div class="square-rotate"></div>
+                        <p class="no-rotate">每日一练</p>
+                    </div>
+                    <p class="desc">iwe jfsdk jfise jkds jks dj fkjs dkfsd fsdf</p>
+                </div>
+                <div class="res-wrapper">
+                    <p class="desc">iwe jfsdk jfise jkds jks dj fkjs dkfsd fsdf</p>
+                    <div>
+                        <div class="square-rotate"></div>
+                        <p class="no-rotate">每日一练</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">平台功能</h2>
+                    <h3 class="section-subheading text-muted section-subtitle">FEATURES</h3>
+                </div>
+            </div>
+            <div class="row line-position">
+                <ul class="features">
+                    <li class="li-up feature-1">111</li>
+                    <li class="li-down feature-2">222</li>
+                    <li class="li-up feature-3">111</li>
+                    <li class="li-down feature-4">222</li>
+                    <li class="li-up feature-5">111</li>
+                    <li class="li-down feature-6">222</li>
+                    <li class="li-up feature-7">111</li>
+                </ul>
+                <div class="dashed-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teacher certification -->
+    <section id="certification">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">教师资格证考试</h2>
+                    <h3 class="section-subheading text-muted section-subtitle">TEACHER CERTIFICATION</h3>
+                </div>
+            </div>
+            <div class="row advantage-position">
+                <div class="session">
+                    <div class="title">笔试环节</div>
+                    <div class="session-panel">
+                        <img src="http://localhost:1313/img/header-bg.jpg" alt="">
+                        <p>ksajfsokfsofiajkfaosifdjskdifjasjfiajskf fjkdsjfisjkfd dfj ksdjfkdf dsjfsjd ids djsd
+                            fsdfkjdsfj sdf sdf dsfj jfsdf sd </p>
+                    </div>
+                </div>
+                <div class="session">
+                    <div class="title">面试环节</div>
+                    <div class="session-panel">
+                        <img src="http://localhost:1313/img/header-bg.jpg" alt="">
+                        <p>ksajfsokfsofiajkfaosifdjskdifjasjfiajskf fjkdsjfisjkfd dfj ksdjfkdf dsjfsjd ids djsd
+                            fsdfkjdsfj sdf sdf dsfj jfsdf sd </p>
+                    </div>
+                </div>
+                <div class="advantage">
+                    <p>突破地域、时间限制</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="textbooks">10天搞定教师资格证系列丛书（幼儿园）</div>
+                <div class="flexbox flex-space-around">
+                    <div class="textbook">
+                        <span class="img-center">
+                            <img class="textbook-img" src="http://localhost:1313/img/header-bg.jpg">
+                        </span>
+                        <h4 class="textbook-title">JKSIFEKSDIFJEJFISD</h4>
+                        <p class="text-muted ">jfiekjfmdfioesfkjdmkiesdkmj</p>
+                    </div>
+                    <div class="textbook">
+                        <span class="img-center">
+                            <img class="textbook-img" src="http://localhost:1313/img/header-bg.jpg">
+                        </span>
+                        <h4 class="textbook-title">空间发斯蒂芬就是快递反馈是打发时间的反馈都是开发商的方式登记反馈的反馈是打发点开放地方</h4>
+                        <p class="text-muted ">jfiekjfmdfioesfkjdmkiesdkmj</p>
+                        <p class="text-muted ">jfiekjfmdfioesfkjdmkiesdkmj</p>
+                        <p class="text-muted ">jfiekjfmdfioesfkjdmkiesdkmj</p>
+                        <p class="text-muted ">jfiekjfmdfioesfkjdmkiesdkmj</p>
+                        <p class="text-muted ">jfiekjfmdfioesfkjdmkiesdkmj</p>
+                    </div>
+                    <div class="textbook">
+                        <span class="img-center">
+                            <img class="textbook-img" src="http://localhost:1313/img/header-bg.jpg">
+                        </span>
+                        <h4 class="textbook-title">JKSIFEKSDIFJEJFISD</h4>
+                        <p class="text-muted ">jfiekjfmdfioesfkjdmkiesdkmj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    {{ partial "js.html" . }}
+    <script>
+        $("a").on('click', function (event) {
+            if (this.hash && window.location.pathname == "/testing/") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
