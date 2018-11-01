@@ -468,7 +468,7 @@ div.dashed-line{
     left: 25%;
 }
 
-.textbooks{
+.small-module{
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
     line-height: 3;
@@ -494,3 +494,98 @@ div.dashed-line{
 .img-center{
     display: inline-block;
 }
+
+/*
+  game
+ */
+
+ /* special */
+ .modal-img{
+     width: 40%;
+     display: inline-block;
+     margin: 10px;
+ }
+ .modal-desc{
+     font-size: 16px;
+     letter-spacing: 1px;
+     width: 80%;
+     margin: auto;
+ }
+
+ .game-wrapper{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+     width: 100%;
+     padding: 10px 30px;
+ }
+ .game-left,.game-right{
+     width: 45%;
+ }
+ .game-name{
+     border: 6px solid skyblue;
+     border-radius: 40px;
+     text-align: center;
+     line-height: 40px;
+     vertical-align: middle;
+     margin: 10px 0 30px 0;
+     font-size: 22px;
+     color: dodgerblue;
+ }
+ 
+ .rules{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ .rules>.rule-panel{
+     border: 1px solid #ccc;
+     box-shadow: 1px 1px 2px #464545;
+     margin: 20px;
+ }
+ .rules>.rule-panel>img{
+     display: inline-block;
+     width: 100%;
+     height: 100%;
+ }
+ .rules>.rule-panel>p.rule-desc{
+     text-align: center;
+     line-height: 40px;
+ }
+
+ div.test{
+     width: 100px;
+     height: 100px;
+     background-color: skyblue;
+ }
+.game-video{
+    margin-top: 40px;
+    float: right;
+}
+ .game-video>p{
+     line-height: 40px;
+     font-size: 25px;
+     font-weight: 500;
+
+ }
+ .game-video>img{
+     width: 200px;
+     height: 200px;
+ }
+
+ /* carousel */
+ .yzy-control.right,.yzy-control.left{
+     background-image: none;
+ }
+ .yzy-control:hover{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .1) 100%);
+    filter: alpha(opacity=60);
+    opacity: .6;
+    font-size: 20px;
+ }
+ .yzy-carousel{
+     margin: 0px 100px;
+ }
