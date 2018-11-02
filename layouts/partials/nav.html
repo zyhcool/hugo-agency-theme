@@ -29,33 +29,15 @@
           <a href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}"></a>
         </li>
 
-        {{ range .Site.Menus.prepend }}
-          <li>
-            <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
-          </li>
-        {{ end }}
-
         {{ if .Site.Params.services.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#services">{{ with .Site.Params.navigation.services }}{{ . }}{{ end }}</a>
           </li>
         {{ end }}
 
-        {{ if .Site.Params.portfolio.enable }}
-          <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
-          </li>
-        {{ end }}
-
         {{ if .Site.Params.about.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.navigation.about }}{{ . }}{{ end }}</a>
-          </li>
-        {{ end }}
-
-        {{ if .Site.Params.team.enable }}
-          <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#team">{{ with .Site.Params.navigation.team }}{{ . }}{{ end }}</a>
           </li>
         {{ end }}
 
@@ -71,11 +53,6 @@
           </li>
         {{ end }}
 
-        {{ range .Site.Menus.postpend }}
-          <li>
-            <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-        {{ end }}
       </ul>
     </div>
     {{ "<!-- /.navbar-collapse -->" | safeHTML }}
